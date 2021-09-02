@@ -1,0 +1,64 @@
+.ContenedorFormulario{
+
+    width: 50%;
+    margin: 5rem auto 10rem auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: rgba(51, 51, 51, 0.750);
+    box-shadow:0 8px 32px 0 rgba(124, 125, 131, 0.37);
+    border-top:2px solid rgba(255, 255, 255, 0.15);
+    border-left:2px solid rgba(255, 255, 255, 0.15);
+
+
+    .ContenedorFormulrio h2{
+
+        margin-bottom: 2rem;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 0.5rem;
+        color: #333;
+        padding-left: 3rem;
+
+    }   
+
+    .ContenedorFormulario__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr 1fr)); 
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+
+        .estiloForma{
+            border:none;
+            outline:none;
+            background: transparent;
+            border-bottom: 1px solid gray;
+            font-size: 1.8rem;
+            color:#fff;
+
+        }
+
+        input{
+
+        height: 4rem;
+            
+        } 
+
+        .buttonForm{
+
+            padding: 2rem;
+            padding-bottom: 3rem;
+            background: rgba(255, 255, 255, 0.6);
+            color:#333;
+            border: none;
+            border-radius: 2rem;
+            width: 20rem;
+
+        }
+    }
+
+}

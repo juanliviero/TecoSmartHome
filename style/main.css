@@ -1,0 +1,758 @@
+/*------------------------ HOJA DE ESTILO  ------------------------ */
+/* -- ESTILOS DE SITIO -- */
+/* -- FUENTES -- */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+/* -- PALETA COLORES -- */
+/* #333 - #004D5E - #52843E - #618DE7 - #80E4DC - #4A4AED - #f2f2f2 */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  color: #333;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Lato", sans-serif;
+}
+
+.titulosPrincipales {
+  text-align: center;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 2rem;
+  /* #333 - #004D5E - #52843E - #618DE7 - #80E4DC - #4A4AED - #f2f2f2 */
+}
+
+.header__navbar {
+  background: #333;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__navbar .navbar__logo {
+  height: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+.header__navbar .navbar__lista {
+  margin-right: 1%;
+  padding: 0;
+  list-style: none;
+}
+
+.header__navbar .navbar__lista .navbar__link {
+  display: inline-block;
+}
+
+.header__navbar .navbar__lista .navbar__link a {
+  padding: 0.7rem;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.header__navbar .navbar__lista .navbar__link:hover {
+  color: #80E4DC;
+  border-bottom: 0.2rem solid;
+}
+
+/* ----- Navegacion Media Query ----- */
+@media (max-width: 610px) {
+  .imglogo {
+    display: none;
+  }
+}
+
+@media (max-width: 490px) {
+  .barraNavegacion {
+    background: #333;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 5rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .barraNavegacion ul li a {
+    padding: 0.3rem;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+  }
+}
+
+/* BANNER INDEX */
+.banner {
+  background-image: url("../imagenes/family_iot.jpg");
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner .banner__cont {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #f2f2f2;
+  background-color: rgba(0, 22, 40, 0.425);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.banner .banner__cont .banner__tarjeta {
+  border-radius: 1rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.banner .banner__cont .banner__tarjeta .banner__titulo {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.banner .banner__cont .banner__tarjeta .banner__subTitulo {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ----- BANNER RESTO DE PAGINAS ----- */
+.bannerResto {
+  background-image: url("../imagenes/family_iot.jpg");
+  padding-top: 50px;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bannerResto .bannerResto__cont {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #f2f2f2;
+  background-color: rgba(0, 22, 40, 0.425);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.bannerResto .bannerResto__cont .bannerResto__tarjeta .bannerResto__titulo {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* ----- BANNER Media Query ----- */
+@media (max-width: 768px) {
+  .banner {
+    background-image: url("/imagenes/Comcast_Event-Feature-1600.jpg");
+    padding-top: 50px;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner {
+    background-image: url("/imagenes/family_iot.jpg");
+    padding-top: 50px;
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .bannerCont h1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .bannerCont p {
+    display: none;
+  }
+  .tarjetaBanner {
+    border-radius: none;
+    padding: 2rem;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-top: none;
+    border-left: none;
+  }
+}
+
+/* ----- PAGINA CONTACTO ----- */
+.bannerContacto {
+  background-image: url("../imagenes/contact-us-4193523_1920.jpg");
+  padding-top: 50px;
+  width: 100%;
+  height: 90.4vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bannerContacto .bannerContacto__cont {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #f2f2f2;
+  background-color: rgba(127, 130, 133, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.bannerContacto .bannerContacto__cont .bannerContacto__cont h1 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.bannerContacto .bannerContacto__cont .bannerContacto__cont p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .footer__Contenedor {
+  width: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__Contenedor .footer__img {
+  font-size: 3rem;
+  color: white;
+}
+
+.main {
+  background-color: #333;
+  margin: 5rem auto 5rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  border: none;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(196, 195, 195, 0.164);
+          box-shadow: 2px 2px 6px 0px rgba(196, 195, 195, 0.164);
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.main .main__titulo {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.main .main__texto {
+  color: white;
+}
+
+.titulosPrincipales {
+  background-color: #333;
+  height: 7rem;
+  width: 100%;
+  color: white;
+}
+
+.ContServ {
+  margin: 8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: (minmax(250px, 1fr))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: row;
+  gap: 2rem;
+  place-items: center center;
+}
+
+.ContServ .ContServ__Tarjetas {
+  background: #333;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
+          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
+  border-radius: 2rem;
+  text-align: center;
+  width: 250px;
+  height: 100%;
+}
+
+.ContServ .ContServ__Tarjetas .Tarjetas__Img {
+  width: 100%;
+  height: 30%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.ContServ .ContServ__Tarjetas .Tarjetas__Texto {
+  padding: 2rem;
+}
+
+.ContServ .ContServ__Tarjetas .Tarjetas__Texto h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.ContServ .ContServ__Tarjetas:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+/* ----- MAIN  Media Query----- */
+@media (max-width: 768px) {
+  .main p {
+    margin: auto;
+    max-width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+    border: none;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
+    border-radius: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: larger;
+  }
+}
+
+@media (max-width: 600px) {
+  .main p {
+    margin: 1rem;
+    max-width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+    border: none;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
+    border-radius: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: larger;
+  }
+}
+
+.mainServicios .servicios {
+  margin: 5rem 0 5rem 0;
+  background-color: #333;
+  color: white;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(51, 51, 51, 0.75);
+          box-shadow: 0 8px 32px 0 rgba(51, 51, 51, 0.75);
+}
+
+.mainServicios .servicios h2 {
+  margin: 2rem;
+}
+
+.mainServicios .servicios p {
+  padding: 2rem;
+}
+
+.mainServicios .ServSeguridad_Img_1 {
+  height: 45rem;
+  width: 100%;
+  background-image: url("../imagenes/family_safe.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mainServicios .ServSeguridad_Img_1 .servicios_cont {
+  background-color: rgba(255, 255, 255, 0.829);
+  width: 40rem;
+  height: 20rem;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainServicios .ServSeguridad_Img_1 .servicios_cont h2 {
+  margin: 2rem;
+}
+
+.mainServicios .ServSeguridad_Img_1 .servicios_cont p {
+  padding: 2rem;
+}
+
+.mainServicios .ServSeguridad_Img_2 {
+  height: 45rem;
+  width: 100%;
+  background-image: url("../imagenes/multimedia.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mainServicios .ServSeguridad_Img_2 .servicios_cont {
+  background-color: rgba(255, 255, 255, 0.829);
+  width: 40rem;
+  height: 20rem;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainServicios .ServSeguridad_Img_2 .servicios_cont h2 {
+  margin: 2rem;
+}
+
+.mainServicios .ServSeguridad_Img_2 .servicios_cont p {
+  padding: 2rem;
+}
+
+.mainServicios .ServSeguridad_Img_3 {
+  height: 45rem;
+  width: 100%;
+  background-image: url("../imagenes/imagen_mantenimiento_2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mainServicios .ServSeguridad_Img_3 .servicios_cont {
+  background-color: rgba(255, 255, 255, 0.829);
+  width: 40rem;
+  height: 20rem;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainServicios .ServSeguridad_Img_3 .servicios_cont h2 {
+  margin: 2rem;
+}
+
+.mainServicios .ServSeguridad_Img_3 .servicios_cont p {
+  padding: 2rem;
+}
+
+.IOT__bienvenida {
+  background-color: #333;
+  margin: 5rem auto 5rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.IOT__bienvenida h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.IOT__bienvenida p {
+  color: white;
+}
+
+.ContenedorFormulario {
+  width: 50%;
+  margin: 5rem auto 10rem auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: rgba(51, 51, 51, 0.75);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.ContenedorFormulario .ContenedorFormulrio h2 {
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.5rem;
+  color: #333;
+  padding-left: 3rem;
+}
+
+.ContenedorFormulario .ContenedorFormulario__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: (minmax(250px, 1fr 1fr))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(250px, 1fr 1fr));
+  gap: 2rem;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.ContenedorFormulario .ContenedorFormulario__form .estiloForma {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid gray;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.ContenedorFormulario .ContenedorFormulario__form input {
+  height: 4rem;
+}
+
+.ContenedorFormulario .ContenedorFormulario__form .buttonForm {
+  padding: 2rem;
+  padding-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.6);
+  color: #333;
+  border: none;
+  border-radius: 2rem;
+  width: 20rem;
+}
+
+.Soporte__bienvenida {
+  margin: 5rem auto 5rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  border: none;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(196, 195, 195, 0.164);
+          box-shadow: 2px 2px 6px 0px rgba(196, 195, 195, 0.164);
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.Soporte__bienvenida h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.Soporte__bienvenida p {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
