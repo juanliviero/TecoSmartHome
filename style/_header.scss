@@ -51,13 +51,53 @@
 
 /* ----- Navegacion Media Query ----- */
 
- @media (max-width:610px)
+ @media (max-width:576px)
 {
 
- .imglogo
-{
-display:none;
-}
+
+    .header__navbar{
+
+        justify-content:center;
+        height: auto;
+        padding: 1.5rem;
+
+        .navbar__logo{
+
+            display: none;
+        }
+
+        .navbar__lista{
+
+            margin-right:1%;
+            padding:0;
+            list-style:none;
+    
+            .navbar__link {
+                
+                display:inline-block;
+    
+                a {
+                    padding:0.7rem;
+                    transition: all 0.15s linear;
+                    color:#f2f2f2;
+                    font-size: 1.2rem;
+                }
+    
+    
+                 &:hover {
+    
+                    color:#80E4DC;
+                    border-bottom: 0.2rem solid;
+                 }
+            }
+        }    
+
+        
+
+
+
+        
+    }
 
 
 }

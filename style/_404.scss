@@ -1,0 +1,56 @@
+.banner404{
+    background-image:url("../imagenes/404.jpg");
+    padding-top:50px;
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    
+    .banner404__cont{
+        margin:0;
+        padding:0;
+        width: 100%;
+        height:100%;
+        color:white;
+        // background-color:rgba(0, 22, 40, 0.425);
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start;
+        font-family: 'Lato', sans-serif;
+
+        .banner404__tarjeta{
+            
+            border-radius: 1rem;
+            margin-left: 5rem;
+            padding: 2rem;
+            background: rgba(51, 51, 51, 0.705);
+            box-shadow:0 8px 32px 0 rgba(124, 125, 131, 0.37);
+            border-top:2px solid rgba(255, 255, 255, 0.15);
+            border-left:2px solid rgba(255, 255, 255, 0.15);
+        
+    
+
+            .banner404__titulo{
+                margin:0;
+                padding:0;
+                padding-bottom: 1rem;
+                font-size:3rem;
+                text-align:start
+
+            }
+
+            .banner404__subTitulo{
+                margin:0;
+                padding:0;
+                padding-bottom: 3rem;
+                font-size:3rem;
+                text-align:center;
+
+            }
+
+        }
+
+    }   
+}

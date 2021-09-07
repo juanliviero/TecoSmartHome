@@ -11,15 +11,6 @@
 
 //Variables //
 
-$colorPrimario : #333;
-$colorSecundario: #004D5E;
-$colorTerciario: #52843E;
-
-$fuentesTitulo: 'Lato', sans-serif;
-$fuentesTexto: 'Roboto', sans-serif;
-
-
-
 
 
 *{
@@ -42,17 +33,24 @@ body{
     
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: $fuentesTitulo;
-}
+
+$colorPrimario : #333;
+$colorSecundario: #004D5E;
+$colorTerciario: #52843E;
+
+$fuentestexto:clamp(1.4rem,2vw,2.1rem);
+$fuentesubtitulo:clamp(1.8rem,3vw,3rem);
+ $fuentesTituloLg: 8vw 'Lato', sans-serif;
+ $fuentesSubTituloLg: 4vmin 'Roboto', sans-serif;
+// // $fuentesTextoLg: clamp() 'Roboto', sans-serif;
 
 
-.titulosPrincipales{
-    text-align:center;
-    padding-bottom:1rem;
-    text-decoration:none;
-    margin-top: 2rem;
-    padding: 2rem;
+// $fuentesTituloMd: 3.5rem 'Lato', sans-serif;
+// $fuentesSubTituloMd: 2.5rem 'Roboto', sans-serif;
+// $fuentesTextoMd: 1.8rem 'Roboto', sans-serif;
 
-    /* #333 - #004D5E - #52843E - #618DE7 - #80E4DC - #4A4AED - #f2f2f2 */
-}
+// $fuentesTituloSm: 2.1rem 'Lato', sans-serif;
+// $fuentesSubTituloSm: 1.8rem 'Roboto', sans-serif;
+// $fuentesTextoSm: 1.4rem 'Roboto', sans-serif;
+
+

@@ -14,22 +14,68 @@
 
 
 
-    .main__titulo{
+    h2{
         color: white;
         margin-bottom: 2rem;
+        font-size: $fuentesubtitulo;
     }
 
     .main__texto{
         color: white;
+        font-size:min(1.4rem, 2.1rem);
     }
 
 
 
 }
 
-.titulosPrincipales{
-  background-color: $colorPrimario;
-  height: 7rem;
-  width: 100%;
-  color: white;
-}
+// .titulosPrincipales{
+//   background-color: $colorPrimario;
+//   height: 7rem;
+//   width: 100%;
+//   color: white;
+// }
+
+// @media (max-width:576px)
+// {
+//   .main
+//   {
+    
+//     background-color:$colorPrimario;
+//     margin:3rem auto 3rem auto;
+//     align-items: center;
+//     padding: 2rem;
+//     text-align: center;
+//     font-size: 1.6rem;
+  
+  
+  
+//       .main__titulo{
+//           color: white;
+//           margin-bottom: 2rem;
+//           font-size: 2.1rem;
+
+//       }
+  
+//       .main__texto{
+//           color: white;
+//       }
+  
+  
+  
+//   }
+  
+//   .titulosPrincipales{
+//     background-color: $colorPrimario;
+//     height: 7rem;
+//     width: 100%;
+//     color: white;
+//   }
+
+
+
+
+
+
+
+// }

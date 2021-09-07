@@ -4,7 +4,7 @@
     background-image:url("../imagenes/family_iot.jpg");
     padding-top:50px;
     width: 100%;
-    height:100vh;
+    height:70vh;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
@@ -20,16 +20,12 @@
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        font-family: 'Lato', sans-serif;
 
         .banner__tarjeta{
             
-            border-radius: 1rem;
+
             padding: 2rem;
-            background: rgba(255, 255, 255, 0.3);
-            box-shadow:0 8px 32px 0 rgba(124, 125, 131, 0.37);
-            border-top:2px solid rgba(255, 255, 255, 0.15);
-            border-left:2px solid rgba(255, 255, 255, 0.15);
+
         
     
 
@@ -37,7 +33,7 @@
                 margin:0;
                 padding:0;
                 padding-bottom: 1rem;
-                font-size:5rem;
+                font:$fuentesTituloLg;
                 text-align:center;
 
             }
@@ -46,7 +42,7 @@
                 margin:0;
                 padding:0;
                 padding-bottom: 3rem;
-                font-size:2rem;
+                font:$fuentesSubTituloLg;
                 text-align:center;
 
             }
@@ -82,12 +78,6 @@
 
         .bannerResto__tarjeta{
             
-            // border-radius: 1rem;
-            // padding: 2rem;
-            // background: rgba(255, 255, 255, 0.3);
-            // box-shadow:0 8px 32px 0 rgba(124, 125, 131, 0.37);
-            // border-top:2px solid rgba(255, 255, 255, 0.15);
-            // border-left:2px solid rgba(255, 255, 255, 0.15);
         
     
 
@@ -114,7 +104,7 @@
 {
 
 .banner{
-    background-image:url("/imagenes/Comcast_Event-Feature-1600.jpg");
+    background-image:url("../imagenes/family_iot.jpg");
     padding-top:50px;
     width: 100%;
     height:50vh;
@@ -128,48 +118,45 @@
 
 }
 
-@media (max-width:550px)
+@media (max-width:576px)
 {
 
-.banner{
-    background-image:url("/imagenes/family_iot.jpg");
-    padding-top:50px;
-    width: 100%;
-    height:25vh;
-    background-size: cover;
-    background-position:center;
-    background-attachment: fixed;
+    .banner{
+        background-image:url("../imagenes/family_iot.jpg");
+        padding-top:50px;
+        width: 100%;
+        height:50vh;
+        background-size: cover;
+        background-position:center;
+        background-attachment: fixed;
+
+        .banner__cont{
+
+
+            .banner__titulo{
+                margin:0;
+                padding:0;
+                padding-bottom: 0.5rem;
+                padding-top: 2rem;
+                text-align:center;
+                font:$fuentesTituloLg;
+            }
+        
+            .banner__subTitulo {
+                font:$fuentesSubTituloLg;
     
+            }
+
+
+        }
+
+        
+
+
+        
+        
+    }
 }
-
-.bannerCont h1{
-    margin:0;
-    padding:0;
-    padding-bottom: 1rem;
-    font-size:2rem;
-    text-align:center;
-
-}
-
-.bannerCont p{
- display:none
-
-}
-
-.tarjetaBanner{
-    border-radius: none;
-    padding: 2rem;
-    background:none;
-    box-shadow:none;
-    border-top:none;
-    border-left:none;
-}
-
-
-
-
-}
-
 
 
 

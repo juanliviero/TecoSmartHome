@@ -61,45 +61,6 @@
 }
 
 
-/* ----- MAIN  Media Query----- */
-
- @media (max-width:768px)
-{
-  .main p
-{
-margin:auto;
-max-width: 95%;
-align-items: center;
-padding: 2rem;
-border:none;
-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
-border-radius: 2rem;
-text-align: center;
-letter-spacing: 0.1rem;
-font-size: larger;
-}
-
-}
-
-@media (max-width:600px)
-{
-    .main p
-{
-  margin:1rem;   
-  max-width: 95%;
-  align-items: center;
-  padding: 1rem;
-  border:none;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.164);
-  border-radius: 2rem;
-  text-align: center;
-  letter-spacing: 0.1rem;
-  font-size: larger;
-}
-
-}
-
-
 // SERVICIOS - PAGINA SERVICIOS //
 
     .mainServicios {
