@@ -4,7 +4,7 @@
     background-image:url("../imagenes/family_iot.jpg");
     padding-top:50px;
     width: 100%;
-    height:70vh;
+    height:100vh;
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
@@ -33,7 +33,7 @@
                 margin:0;
                 padding:0;
                 padding-bottom: 1rem;
-                font:$fuentesTituloLg;
+                font-size:$fuentestitulo;
                 text-align:center;
 
             }
@@ -42,7 +42,7 @@
                 margin:0;
                 padding:0;
                 padding-bottom: 3rem;
-                font:$fuentesSubTituloLg;
+                font-size:$fuentesubtitulo;
                 text-align:center;
 
             }
@@ -129,29 +129,6 @@
         background-size: cover;
         background-position:center;
         background-attachment: fixed;
-
-        .banner__cont{
-
-
-            .banner__titulo{
-                margin:0;
-                padding:0;
-                padding-bottom: 0.5rem;
-                padding-top: 2rem;
-                text-align:center;
-                font:$fuentesTituloLg;
-            }
-        
-            .banner__subTitulo {
-                font:$fuentesSubTituloLg;
-    
-            }
-
-
-        }
-
-        
-
 
         
         

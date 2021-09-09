@@ -20,6 +20,21 @@
         margin-left: 1.5rem;
     }
 
+    #toggle{
+        display : none
+        }
+    .menuhamburguesa{
+    
+        background-color: $colorPrimario;
+        border-bottom: 2px solid $colorPrimario;
+        color:white;
+        padding: 1rem;
+        display:none;
+    
+    
+    }
+    
+
 
     .navbar__lista{
 
@@ -49,52 +64,79 @@
 }
 
 
+
+
 /* ----- Navegacion Media Query ----- */
 
- @media (max-width:576px)
+ @media screen and (max-width:576px)
 {
 
 
+    
+
     .header__navbar{
 
-        justify-content:center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        display: flex;
+        position: fixed;
         height: auto;
-        padding: 1.5rem;
+        
+        .prueba{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 5rem;
+            align-items:center;
+            justify-content: space-between;
 
-        .navbar__logo{
+            .menuhamburguesa{
 
-            display: none;
+                 display:flex;
+
+            }
+
+
         }
+
+
 
         .navbar__lista{
 
-            margin-right:1%;
-            padding:0;
-            list-style:none;
+            text-align: center;
+            display: none;
+
+            
+
     
             .navbar__link {
                 
-                display:inline-block;
+                display:block;
+                padding: 0.7rem;
     
                 a {
-                    padding:0.7rem;
-                    transition: all 0.15s linear;
-                    color:#f2f2f2;
-                    font-size: 1.2rem;
+                    text-align: center;
+                    padding:0;
+                    
+
                 }
+
+                
     
     
-                 &:hover {
-    
+                &:hover {
+
                     color:#80E4DC;
                     border-bottom: 0.2rem solid;
+    
+
                  }
             }
         }    
 
         
-
-
+        
 
         
     }
@@ -102,26 +144,9 @@
 
 }
 
-@media (max-width:490px)
-{
-    .barraNavegacion{
-        background:#333;
-        color:#f2f2f2;
-        margin:0;
-        padding:0;
-        display:flex;
-        position:fixed;
-        justify-content:center;
-        width: 100%;
-        height:5rem;
-        flex-wrap:nowrap;
-        flex-direction: row;
-    
-    }
 
-    .barraNavegacion ul li a {
-        padding:0.3rem;
-        transition: all 0.25s linear;
-    }
+#toggle:checked + .navbar__lista
+ {
+    display: block;
+ }
 
-}
