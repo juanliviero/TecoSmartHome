@@ -38,18 +38,18 @@ body {
 }
 .main .main__titulo {
   color: white;
-  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);
   letter-spacing: 0.02em;
   text-align: center;
 }
 .main .main__article {
   grid-column: 1/-1;
-  -moz-columns: 3 30ch;
-       columns: 3 30ch;
+  -moz-columns: 2;
+       columns: 2;
 }
 .main .main__article .main__texto {
   color: white;
-  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   line-height: 1.5;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 .mainservicios .main__titulo {
   color: white;
-  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);
   letter-spacing: 0.02em;
 }
 
@@ -88,6 +88,7 @@ body {
   height: 5rem;
   flex-wrap: wrap;
   flex-direction: row;
+  z-index: 10;
 }
 .header__navbar .navbar__logo {
   height: 2.5rem;
@@ -131,7 +132,6 @@ body {
     align-content: center;
     display: flex;
     position: fixed;
-    z-index: 10;
     height: auto;
   }
   .header__navbar .header__logo {
@@ -195,7 +195,7 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
-  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.6rem);
+  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.4rem);
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -203,7 +203,7 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 3rem;
-  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -235,7 +235,7 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
-  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.6rem);
+  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.4rem);
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -328,7 +328,7 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
-  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.6rem);
+  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.4rem);
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -339,7 +339,7 @@ body {
   box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
   border-top: 2px solid rgba(255, 255, 255, 0.15);
   padding: 2rem 0;
-  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   text-align: center;
   width: 100%;
   display: flex;
@@ -400,7 +400,7 @@ body {
   margin-bottom: 1rem;
 }
 .ContServ .ContServ__Tarjetas .Tarjetas__Texto p {
-  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 }
 .ContServ .ContServ__Tarjetas:hover {
   transform: scale(1.1, 1.1);
@@ -430,7 +430,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 2rem;
-  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 }
 .mainServicios .ServSeguridad_Img_1 .servicios_cont .serv_cont_btn {
   width: auto;
@@ -462,7 +462,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 2rem;
-  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 }
 .mainServicios .ServSeguridad_Img_2 .servicios_cont .serv_cont_btn {
   width: auto;
@@ -494,7 +494,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 2rem;
-  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 }
 .mainServicios .ServSeguridad_Img_3 .servicios_cont .serv_cont_btn {
   width: auto;
@@ -522,7 +522,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   }
   .mainServicios .ServSeguridad_Img_1 .servicios_cont .servicios_cont_texto {
     text-align: center;
@@ -551,7 +551,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   }
   .mainServicios .ServSeguridad_Img_2 .servicios_cont .servicios_cont_texto {
     text-align: center;
@@ -580,7 +580,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   }
   .mainServicios .ServSeguridad_Img_3 .servicios_cont .servicios_cont_texto {
     text-align: center;
@@ -676,7 +676,7 @@ body {
 .main_soporte .soporte__titulo {
   justify-self: center;
   color: white;
-  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);
   letter-spacing: 0.02em;
   text-align: center;
   margin: 2rem;
@@ -687,7 +687,7 @@ body {
   flex-wrap: wrap;
   color: white;
   margin: 1rem;
-  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 }
 .main_soporte .soporte__articulos .soporte__article {
   margin: 1rem;

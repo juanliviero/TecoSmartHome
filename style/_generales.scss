@@ -38,15 +38,9 @@ $colorPrimario : #333;
 $colorSecundario: #004D5E;
 $colorTerciario: #52843E;
 
-$fuentestitulo:clamp(3rem, 1.0500rem + 5.4167vw, 5.6rem);
-$fuentesubtitulo:clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
-$fuentestexto:clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
-
-
-
-
- $fuentesTituloLg: 8vw 'Lato', sans-serif;
- $fuentesSubTituloLg: 4vmin 'Roboto', sans-serif;
+$fuentestitulo:clamp(3rem, 1.0500rem + 5.4167vw, 5.4rem);
+$fuentesubtitulo:clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);
+$fuentestexto:clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 
 
 

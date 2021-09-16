@@ -13,6 +13,7 @@
     height:5rem;
     flex-wrap: wrap;
     flex-direction: row;
+    z-index: 10;
 
     .navbar__logo{
 
@@ -82,7 +83,6 @@
         align-content: center;
         display: flex;
         position: fixed;
-        z-index: 10;
         height: auto;
         
         .header__logo{
