@@ -5,13 +5,14 @@
     border-top:2px solid rgba(255, 255, 255, 0.15);
     
     padding: 2rem 0;
+    font-size: $fuentestexto;
     text-align: center;
-    // margin-top: 2rem;
     width: 100%;
     display: flex;
     justify-content:space-around;
     align-items:center; 
     flex-wrap:wrap;
+
 
     .footer__Contenedor{
         width: 16rem;
@@ -23,10 +24,23 @@
 
             font-size: 3rem;
             color:white;
+            padding: .5rem;
 
         }
 
     
+    }
+
+}
+
+@media (max-width:576px){
+
+    .footer h4{
+        margin: .5rem;
+    }
+
+    div p{
+        margin: .5rem;
     }
 
 }

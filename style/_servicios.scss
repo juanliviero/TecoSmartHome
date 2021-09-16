@@ -3,12 +3,12 @@
 
 .ContServ
 {
-    margin:8rem;
+    margin-bottom: 5rem;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-flow: row;
-    gap: 2rem;
+    gap: 3rem;
     place-items: center center;
 
 
@@ -41,11 +41,16 @@
 
             padding:2rem;
 
+
             h3{
 
-                text-transform: uppercase;
+                color:#80E4DC;
                 margin-bottom: 1rem;
 
+            }
+
+            p{
+                font-size: $fuentestexto;
             }
             
         }
@@ -65,158 +70,274 @@
 
     .mainServicios {
 
-        .servicios{
-
-            padding: 0 10%;
-            margin: 5rem 0 5rem 0;
-            background-color: $colorPrimario;
-            color: white;        
-            height: 30vh;
-            display: flex;
-            flex-direction: column;
-            flex-wrap:nowrap;
-            justify-content: center;
-            align-items: center;
-            box-shadow:0 8px 32px 0 rgba(51, 51, 51, 0.750);
-
-            
-            
-            h2{
-                margin: 2rem;
-
-            
-            }
-
-            p{
-                padding: 2rem;
-                
-            }
-
-        } 
-
 
         .ServSeguridad_Img_1 {
                 height: 45rem;
                 width: 100%;
                 background-image: url("../imagenes/family_safe.jpg");
                 background-attachment: fixed;
-                background-size: cover;
+                background-size:cover;
                 background-position: center;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-end;
+                align-items: flex-start;
+                justify-content: center;
+
+                .servicios_cont_texto{
+                    text-align: center;
+                }
+
+                .servicios_cont{
+                    background-color: rgba(255, 255, 255, 0.829);
+                    padding: 3rem;
+                    width: 40rem;
+                    letter-spacing: 0.1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 2rem;
+                    font-size: $fuentestexto;
+                    
+
+                    
+
+                    .serv_cont_btn{
+
+                        width: auto;
+                        margin:2rem;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        background-color: $colorPrimario;
+                        color:white;
+                        text-decoration: none;                 
+    
+                    }
+    
+        
+        
+                    
+                }
+
+        }
+        
+            .ServSeguridad_Img_2 {
+                height: 45rem;
+                width: 100%;
+                background-image: url("../imagenes/multimedia.jpg");
+                background-attachment: fixed;
+                background-size:cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
 
 
                 .servicios_cont{
                     background-color: rgba(255, 255, 255, 0.829);
+                    padding: 3rem;
                     width: 40rem;
-                    height: 20rem;
-                    margin-top: 5rem;
-                    margin-right: 5rem;
+                    letter-spacing: 0.1rem;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     justify-content: center;
+                    margin-left: 2rem;
+                    font-size: $fuentestexto;
                     
 
-                    h2{
-                        margin: 2rem;
-        
                     
+
+                    .serv_cont_btn{
+
+                        width: auto;
+                        margin:2rem;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        background-color: $colorPrimario;
+                        color:white;
+                        text-decoration: none;                 
+
                     }
+
         
-                    p{
-                        padding: 2rem;
-                        
-                    }
         
                     
                 }
 
-        }
-
-        .ServSeguridad_Img_2{
-            height: 45rem;
-            width: 100%;
-            background-image: url("../imagenes/multimedia.jpg");
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-
-
-            .servicios_cont{
-                background-color: rgba(255, 255, 255, 0.829);
-                width: 40rem;
-                height: 20rem;
-                margin-top: 5rem;
-                margin-right: 5rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                
-
-                h2{
-                    margin: 2rem;
-    
-                
-                }
-    
-                p{
-                    padding: 2rem;
-                    
-                }
-    
-                
             }
-
-        }
 
         .ServSeguridad_Img_3{
             height: 45rem;
             width: 100%;
             background-image: url("../imagenes/imagen_mantenimiento_2.jpg");
             background-attachment: fixed;
-            background-size: cover;
+            background-size:cover;
             background-position: center;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
+            justify-content: center;
 
 
             .servicios_cont{
                 background-color: rgba(255, 255, 255, 0.829);
+                padding: 3rem;
                 width: 40rem;
-                height: 20rem;
-                margin-top: 5rem;
-                margin-right: 5rem;
+                letter-spacing: 0.1rem;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: center;
+                margin-left: 2rem;
+                font-size: $fuentestexto;
                 
 
-                h2{
-                    margin: 2rem;
-    
                 
+
+                .serv_cont_btn{
+
+                    width: auto;
+                    margin:2rem;
+                    padding: 1rem 2rem;
+                    text-align: center;
+                    background-color: $colorPrimario;
+                    color:white;
+                    text-decoration: none;                 
+
                 }
-    
-                p{
-                    padding: 2rem;
-                    
-                }
-    
                 
             }
+        }
+    }
 
+
+     @media (max-width:768px){
+
+        .mainServicios {
+
+            .ServSeguridad_Img_1 {
+
+                background-image: url("../imagenes/family_safe_mobile.jpg");
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+
+                .servicios_cont{
+                    background-color: rgba(255, 255, 255, 0.70);
+                    padding: 2rem;
+                    letter-spacing: 0.1rem;
+                    width: 100%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: $fuentestexto;
+
+                    .servicios_cont_texto{
+                        text-align: center;
+                    }
+
+                    .serv_cont_btn{
+
+                        width: auto;
+                        margin:2rem auto;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        background-color: $colorPrimario;
+                        color:white;
+                        text-decoration: none;                  
+    
+                    }
+                    
+                }
+
+            }
+        }
+    
+
+        .mainServicios {
+
+            .ServSeguridad_Img_2 {
+                
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+
+                .servicios_cont{
+                    background-color: rgba(255, 255, 255, 0.70);
+                    padding: 2rem;
+                    letter-spacing: 0.1rem;
+                    width: 100%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: $fuentestexto;
+
+                    .servicios_cont_texto{
+                        text-align: center;
+                    }
+
+                    .serv_cont_btn{
+
+                        width: auto;
+                        margin:2rem auto;
+                        padding: 1rem 2rem;
+                        text-align: center;
+                        background-color: $colorPrimario;
+                        color:white;
+                        text-decoration: none;                  
+
+                    }
+                    
+                }
+
+            }
         }
 
+            .mainServicios {
 
-          
+                .ServSeguridad_Img_3
+                {
+                    
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
 
 
-    }
+                    .servicios_cont{
+                        background-color: rgba(255, 255, 255, 0.70);
+                        padding: 2rem;
+                        letter-spacing: 0.1rem;
+                        width: 100%;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        font-size: $fuentestexto;
+
+                        .servicios_cont_texto{
+                            text-align: center;
+                        }
+
+                        .serv_cont_btn{
+
+                            width: auto;
+                            margin:2rem auto;
+                            padding: 1rem 2rem;
+                            text-align: center;
+                            background-color: $colorPrimario;
+                            color:white;
+                            text-decoration: none;                 
+
+                        }
+                        
+                    }
+
+                }
+            }
+
+    }       
+
+    

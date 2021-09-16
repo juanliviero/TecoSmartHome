@@ -25,24 +25,55 @@ body {
 
 .main {
   background-color: #333;
+  display: grid;
   margin: 5rem auto 5rem auto;
   align-items: center;
-  padding: 5rem;
+  gap: 5rem;
+  padding: 0 5rem 0 5rem;
+  padding-block: min(5vh, 10rem);
   border: none;
   box-shadow: 2px 2px 6px 0px rgba(196, 195, 195, 0.164);
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.1rem;
 }
-.main h2 {
+.main .main__titulo {
   color: white;
-  margin-bottom: 2rem;
-  font-size: clamp(2rem,3vw,3rem);
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
+  letter-spacing: 0.02em;
+  text-align: center;
 }
-.main .main__texto {
+.main .main__article {
+  grid-column: 1/-1;
+  -moz-columns: 3 30ch;
+       columns: 3 30ch;
+}
+.main .main__article .main__texto {
   color: white;
-  font-size: min(1.4rem, 2.1rem);
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  line-height: 1.5;
 }
 
+.mainservicios {
+  background-color: #333;
+  margin: 5rem auto 5rem auto;
+  align-items: center;
+  padding: 0 5rem 0 5rem;
+  padding-block: 2rem;
+  text-align: center;
+  justify-items: center;
+  letter-spacing: 0.1rem;
+}
+.mainservicios .main__titulo {
+  color: white;
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 576px) {
+  .main {
+    gap: 2rem;
+  }
+}
 .header__navbar {
   background: #333;
   color: #f2f2f2;
@@ -79,6 +110,7 @@ body {
 }
 .header__navbar .navbar__lista .navbar__link {
   display: inline-block;
+  border: 0.2rem solid transparent;
 }
 .header__navbar .navbar__lista .navbar__link a {
   padding: 0.7rem;
@@ -99,9 +131,10 @@ body {
     align-content: center;
     display: flex;
     position: fixed;
+    z-index: 10;
     height: auto;
   }
-  .header__navbar .prueba {
+  .header__navbar .header__logo {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -109,7 +142,7 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .header__navbar .prueba .menuhamburguesa {
+  .header__navbar .header__logo .menuhamburguesa {
     display: flex;
   }
   .header__navbar .navbar__lista {
@@ -162,15 +195,17 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
-  font-size: clamp(3rem,5vw,5rem);
+  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.6rem);
   text-align: center;
+  letter-spacing: 0.02em;
 }
 .banner .banner__cont .banner__tarjeta .banner__subTitulo {
   margin: 0;
   padding: 0;
   padding-bottom: 3rem;
-  font-size: clamp(2rem,3vw,3rem);
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 /* ----- BANNER RESTO DE PAGINAS ----- */
@@ -200,8 +235,9 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
-  font-size: 5rem;
+  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.6rem);
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 /* ----- BANNER Media Query ----- */
@@ -265,12 +301,45 @@ body {
   text-align: center;
 }
 
+/* ----- PAGINA SOPORTE ----- */
+.bannerSoporte {
+  background-image: url("../imagenes/support_welcome_700x500.png");
+  padding-top: 50px;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.bannerSoporte .bannerSoporte__cont {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #f2f2f2;
+  background-color: rgba(0, 22, 40, 0.425);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+.bannerSoporte .bannerSoporte__cont .bannerSoporte__tarjeta .bannerSoporte__titulo {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.6rem);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
 .footer {
   background: #333;
   color: white;
   box-shadow: 0 8px 32px 0 rgba(124, 125, 131, 0.37);
   border-top: 2px solid rgba(255, 255, 255, 0.15);
   padding: 2rem 0;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
   text-align: center;
   width: 100%;
   display: flex;
@@ -286,15 +355,25 @@ body {
 .footer .footer__Contenedor .footer__img {
   font-size: 3rem;
   color: white;
+  padding: 0.5rem;
 }
 
+@media (max-width: 576px) {
+  .footer h4 {
+    margin: 0.5rem;
+  }
+
+  div p {
+    margin: 0.5rem;
+  }
+}
 .ContServ {
-  margin: 8rem;
+  margin-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-flow: row;
-  gap: 2rem;
+  gap: 3rem;
   place-items: center center;
 }
 .ContServ .ContServ__Tarjetas {
@@ -317,32 +396,16 @@ body {
   padding: 2rem;
 }
 .ContServ .ContServ__Tarjetas .Tarjetas__Texto h3 {
-  text-transform: uppercase;
+  color: #80E4DC;
   margin-bottom: 1rem;
+}
+.ContServ .ContServ__Tarjetas .Tarjetas__Texto p {
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
 }
 .ContServ .ContServ__Tarjetas:hover {
   transform: scale(1.1, 1.1);
 }
 
-.mainServicios .servicios {
-  padding: 0 10%;
-  margin: 5rem 0 5rem 0;
-  background-color: #333;
-  color: white;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 8px 32px 0 rgba(51, 51, 51, 0.75);
-}
-.mainServicios .servicios h2 {
-  margin: 2rem;
-}
-.mainServicios .servicios p {
-  padding: 2rem;
-}
 .mainServicios .ServSeguridad_Img_1 {
   height: 45rem;
   width: 100%;
@@ -352,24 +415,31 @@ body {
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainServicios .ServSeguridad_Img_1 .servicios_cont_texto {
+  text-align: center;
 }
 .mainServicios .ServSeguridad_Img_1 .servicios_cont {
   background-color: rgba(255, 255, 255, 0.829);
+  padding: 3rem;
   width: 40rem;
-  height: 20rem;
-  margin-top: 5rem;
-  margin-right: 5rem;
+  letter-spacing: 0.1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-left: 2rem;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
 }
-.mainServicios .ServSeguridad_Img_1 .servicios_cont h2 {
+.mainServicios .ServSeguridad_Img_1 .servicios_cont .serv_cont_btn {
+  width: auto;
   margin: 2rem;
-}
-.mainServicios .ServSeguridad_Img_1 .servicios_cont p {
-  padding: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
 }
 .mainServicios .ServSeguridad_Img_2 {
   height: 45rem;
@@ -380,24 +450,28 @@ body {
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  justify-content: center;
 }
 .mainServicios .ServSeguridad_Img_2 .servicios_cont {
   background-color: rgba(255, 255, 255, 0.829);
+  padding: 3rem;
   width: 40rem;
-  height: 20rem;
-  margin-top: 5rem;
-  margin-right: 5rem;
+  letter-spacing: 0.1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-left: 2rem;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
 }
-.mainServicios .ServSeguridad_Img_2 .servicios_cont h2 {
+.mainServicios .ServSeguridad_Img_2 .servicios_cont .serv_cont_btn {
+  width: auto;
   margin: 2rem;
-}
-.mainServicios .ServSeguridad_Img_2 .servicios_cont p {
-  padding: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
 }
 .mainServicios .ServSeguridad_Img_3 {
   height: 45rem;
@@ -408,26 +482,119 @@ body {
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  justify-content: center;
 }
 .mainServicios .ServSeguridad_Img_3 .servicios_cont {
   background-color: rgba(255, 255, 255, 0.829);
+  padding: 3rem;
   width: 40rem;
-  height: 20rem;
-  margin-top: 5rem;
-  margin-right: 5rem;
+  letter-spacing: 0.1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-left: 2rem;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
 }
-.mainServicios .ServSeguridad_Img_3 .servicios_cont h2 {
+.mainServicios .ServSeguridad_Img_3 .servicios_cont .serv_cont_btn {
+  width: auto;
   margin: 2rem;
-}
-.mainServicios .ServSeguridad_Img_3 .servicios_cont p {
-  padding: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .mainServicios .ServSeguridad_Img_1 {
+    background-image: url("../imagenes/family_safe_mobile.jpg");
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mainServicios .ServSeguridad_Img_1 .servicios_cont {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  }
+  .mainServicios .ServSeguridad_Img_1 .servicios_cont .servicios_cont_texto {
+    text-align: center;
+  }
+  .mainServicios .ServSeguridad_Img_1 .servicios_cont .serv_cont_btn {
+    width: auto;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+  }
+
+  .mainServicios .ServSeguridad_Img_2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mainServicios .ServSeguridad_Img_2 .servicios_cont {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  }
+  .mainServicios .ServSeguridad_Img_2 .servicios_cont .servicios_cont_texto {
+    text-align: center;
+  }
+  .mainServicios .ServSeguridad_Img_2 .servicios_cont .serv_cont_btn {
+    width: auto;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+  }
+
+  .mainServicios .ServSeguridad_Img_3 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mainServicios .ServSeguridad_Img_3 .servicios_cont {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+  }
+  .mainServicios .ServSeguridad_Img_3 .servicios_cont .servicios_cont_texto {
+    text-align: center;
+  }
+  .mainServicios .ServSeguridad_Img_3 .servicios_cont .serv_cont_btn {
+    width: auto;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+  }
+}
 .IOT__bienvenida {
   background-color: #333;
   margin: 5rem auto 5rem auto;
@@ -485,30 +652,58 @@ body {
   height: 4rem;
 }
 .ContenedorFormulario .ContenedorFormulario__form .buttonForm {
-  padding: 2rem;
-  padding-bottom: 3rem;
-  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  background: #80E4DC;
   color: #333;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 20rem;
 }
 
-.Soporte__bienvenida {
+.main_soporte {
+  background-color: #333;
+  display: flex;
   margin: 5rem auto 5rem auto;
   align-items: center;
-  padding: 5rem;
+  padding: 0 5rem 0 5rem;
   border: none;
   box-shadow: 2px 2px 6px 0px rgba(196, 195, 195, 0.164);
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.Soporte__bienvenida h2 {
+.main_soporte .soporte__titulo {
+  justify-self: center;
   color: white;
-  margin-bottom: 2rem;
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 3rem);
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 2rem;
 }
-.Soporte__bienvenida p {
+.main_soporte .soporte__articulos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   color: white;
+  margin: 1rem;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.8rem);
+}
+.main_soporte .soporte__articulos .soporte__article {
+  margin: 1rem;
+  padding: 2rem;
+}
+.main_soporte .soporte__articulos .soporte__article .soporte__texto {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+.main_soporte .soporte__articulos .soporte__article .soporte__texto:hover {
+  color: #333;
+  background-color: #80E4DC;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .banner404 {

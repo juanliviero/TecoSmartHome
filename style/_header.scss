@@ -45,6 +45,7 @@
         .navbar__link {
             
             display:inline-block;
+            border: 0.2rem solid transparent;
 
             a {
                 padding:0.7rem;
@@ -81,9 +82,10 @@
         align-content: center;
         display: flex;
         position: fixed;
+        z-index: 10;
         height: auto;
         
-        .prueba{
+        .header__logo{
             display: flex;
             flex-direction: row;
             width: 90%;
