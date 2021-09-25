@@ -11,6 +11,10 @@
     gap: 3rem;
     place-items: center center;
 
+    a{
+        text-decoration: none;
+    }
+
 
 
 
@@ -24,7 +28,7 @@
         border-radius: 2rem;
         text-align: center;
         width: 250px;
-        height: 100%;
+        height: 42rem;
 
 
     
@@ -33,6 +37,7 @@
 
             width: 100%;
             height: 30%;
+            object-fit: cover;
             border-top-left-radius: 2rem;
             border-top-right-radius: 2rem;
         }
@@ -66,6 +71,23 @@
 }
 
 
+@media (max-width:576px){
+
+    .ContServ{
+
+        .ContServ__Tarjetas{
+
+            .Tarjetas__Img{
+                height: 40%;
+            }
+
+        }
+
+    }   
+
+}
+
+
 // SERVICIOS - PAGINA SERVICIOS //
 
     .mainServicios {
@@ -75,13 +97,13 @@
                 height: 45rem;
                 width: 100%;
                 background-image: url("../imagenes/family_safe.jpg");
-                background-attachment: fixed;
                 background-size:cover;
                 background-position: center;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
+                
 
                 .servicios_cont_texto{
                     text-align: center;
@@ -124,7 +146,6 @@
                 height: 45rem;
                 width: 100%;
                 background-image: url("../imagenes/multimedia.jpg");
-                background-attachment: fixed;
                 background-size:cover;
                 background-position: center;
                 display: flex;
@@ -170,7 +191,6 @@
             height: 45rem;
             width: 100%;
             background-image: url("../imagenes/imagen_mantenimiento_2.jpg");
-            background-attachment: fixed;
             background-size:cover;
             background-position: center;
             display: flex;
@@ -207,7 +227,22 @@
                 
             }
         }
+
+        .main{
+
+            .main__iconos{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                .iconos__serv{
+                    margin: 0.2rem;
+                }
+
+            }
+        }
     }
+
 
 
      @media (max-width:768px){
@@ -340,4 +375,137 @@
 
     }       
 
+    @media (max-width:576px){
+
+        .main{
+
+            .main__iconos{
+
+                .iconos__serv{
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+        }
+
+    }
+
+
+    // FORMULARIO DE CONTACTO - SERVICIOS //
+
+
+    .Formulario__Servicios{
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    
+    
+    
+        .ContenedorFormulario__form{
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        
+    
+            .estiloForma{
+                width: 100%;
+                border:none;
+                outline:none;
+                background: transparent;
+                border-bottom: 1px solid gray;
+                font-size: $fuentestexto;
+                color:#fff;
+    
+            }
+
+
+    
+            input{
+    
+            height: 3.5rem;
+                
+            } 
+    
+            .buttonForm{
+                
+                padding: 1rem;
+                outline: none;
+                background:white;
+                color:#333;
+                border: none;
+                border-radius: 0.2rem;
+                width: 100%;
+                font-size: $fuentestexto;
+                font-weight:bolder;
+                
+            }
+
+            .buttonForm:hover,
+            .buttonForm:focus{
+
+                    background:#618DE7;
+                    transition:background-color 0.3s ease-out;
+
+            }
+                
+                
+        }
+        
+
+    }
+
+    @media (min-width:420px){
+
+
+        .main{
+            .Formulario__Servicios{
+
+                .ContenedorFormulario__form{
+
+                    grid-template-columns: 1fr 1fr;
+                    max-width: 100%;
+                    border-radius: 1rem;
+                    padding: 3rem;
+                    color: #333;
+                    background: rgba(255, 255, 255, 0.918);
+                    box-shadow:0 8px 32px 0 rgba(124, 125, 131, 0.35);
+                    border-top:2px solid rgba(255, 255, 255, 0.05);
+                    border-left:2px solid rgba(255, 255, 255, 0.05);
+
+                    .estiloForma{
+
+                        color:#333;
+            
+                    }
+
+                    .buttonForm{
+                
+                        background:#333;
+                        color:white;
+
+                        
+                    }
+
+                    .buttonForm:hover,
+                    .buttonForm:focus{
+
+                    background: #618DE7;
+                    color:#333;
+                    transition:background-color 0.3s ease-out;
+
+            }
+                    
+
+                    .block{
+
+                        grid-column:1/3;
+
+                    }
+                    
+                }
+            }
+        }
+    }
     

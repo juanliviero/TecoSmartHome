@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/20863efab9.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="imagenes/iconos/icons8-smarthome-64.png">
         <link rel="stylesheet" href="./style/main.css">
         
 
@@ -84,60 +85,142 @@
             </section>
 
             <section class="main_soporte">
-                <h3 class="soporte__titulo">Consultas populares</h3>
+                <h3 class="soporte__titulo">Ayuda en linea</h3>
+
+                <div class="soporte_login"> 
+                    <div class="login_cont_texto">
+                        <div class="login_inicio">
+                            <h4 class="login__titulo">Login Usuario</h2>
+                            <img src="imagenes/iconos/ico_userlogin2.png" class="login__img" alt="icono login usuario" loading="lazy">
+                        </div>
+                        <p>Para una mejor atención, ingresá tu usuario y contraseña</p>
+                    </div>
+                    
+                    <div class="ContFormulario__Login">
+    
+                        <form class="Login__form" >
+                               
+                                <p>
+                                    <input type="text" name="Usuario" class="form__estilo" placeholder="Nombre de Usuario" required>
+                                </p>
+    
+                                <p>
+                                    <input type="password" pattern=".{6,8}" name="Contraseña" class="form__estilo" placeholder="Contraseña" required>
+                                </p>
+
+                                <a href="https://sesion.telecom.com.ar/recoveryPassword.aspx">Olvidó su contraseña? </a>
+                            
+                                <p>
+                                    <button class="login__btn" type="submit">
+                                        ACCEDER
+                                    </button>
+    
+                                </p>
+            
+                        </form>
+                    </div>
+                </div>
+                    
+
+                <div class="main__atencion">
+                    <div class="atencion__enlinea">
+                        <img src="imagenes/iconos/ico_ayuda_online_support.png" class="iconos__ayuda" alt="icono ayuda en linea" loading="lazy">
+                        <a href="#" class="turno__texto">Atencion en linea </a>
+                    </div>
+                    <div class="atencion__turno">
+                        <img src="imagenes/iconos/ico_ayuda_turno.png" class="iconos__ayuda" alt="icono reloj turno" loading="lazy">
+                        <a href="#" class="turno__texto">Solicitud de turno </a>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="main_soporte">
+                <h3 class="soporte__titulo">Consultas Frecuentes</h3>
+                <div class="soporte__iconos">
+
+                    <img src="imagenes/iconos/ico_ask2.png" class="iconos__ask" alt="icono puerta apertura automatica" loading="lazy">
+
+                </div>
                 <div class="soporte__articulos">
+
                     <div class="soporte__article">
-                        <a href="#" class="soporte__texto">
-                            Conexion WIFI con Dispositivos
-                        </a>
-                        <a href="#" class="soporte__texto">
-                            Aplicacion "Mi SmartHome"
-                        </a>
-                        <a href =# class="soporte__texto">
-                            Sincronizacion con la nube
-                        </a>
-                    </div>    
+
+
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_mult_wifi2.png" class="iconos__serv" alt="icono wifi" loading="lazy">
+                            <a href="#" class="soporte__texto">Configuración WIFI </a>
+                        </div>
+
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_mult_apk.png" class="iconos__serv" alt="icono aplicacion smarthome" loading="lazy">
+                            <a href="#" class="soporte__texto"> App "Mi SmartHome"</a>
+                        </div>
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_mult_nube.png" class="iconos__serv" alt="icono sincronizacion nube" loading="lazy">
+                            <a href="#" class="soporte__texto"> Sincronización con la nube</a>
+                        </div>
+                        
+                    </div>   
+
                     <div class="soporte__article">
-                        <a href="#" class="soporte__texto">
-                            Camaras de Seguridad
-                        </a>
-                        <a href="#" class="soporte__texto">
-                            Detectores de Incencio
-                        </a>
-                        <a href="#" class="soporte__texto">
-                            Configuracion Zonal
-                        </a>
+
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_seg_cam.png" class="iconos__serv" alt="icono camara seguridad" loading="lazy">
+                            <a href="#" class="soporte__texto"> Cámaras de Seguridad</a>
+                        </div>
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_seg_alerta.png" class="iconos__serv" alt="icono incendios" loading="lazy">
+                            <a href="#" class="soporte__texto"> Detectores de Incencio</a>
+                        </div>
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_mult_zonal.png" class="iconos__serv" alt="icono configuracion zonal" loading="lazy">
+                            <a href="#" class="soporte__texto"> Configuración Zonal</a>
+                        </div>
+
                     </div> 
+
                     <div class="soporte__article">
-                        <a href="#" class="soporte__texto">
-                            Luminarias
-                        </a>
-                        <a href="#" class="soporte__texto">
-                            Google Home
-                        </a>
-                        <a href="#" class="soporte__texto">
-                            Alexa
-                        </a>
+
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_mant_luces.png" class="iconos__serv" alt="icono config luces" loading="lazy">
+                            <a href="#" class="soporte__texto"> Luminarias</a>
+                        </div>
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_mant_ghome.png" class="iconos__serv" alt="icono config google home" loading="lazy">
+                            <a href="#" class="soporte__texto"> Google Home</a>
+                        </div>
+                        <div class="article__pregunta">
+                            <img src="imagenes/iconos/ico_mult_smh.png" class="iconos__serv" alt="icono mas consultas" loading="lazy">
+                            <a href="#" class="soporte__texto"> Más consultas...</a>
+                        </div>
+                        
                     </div> 
+
                 </div>
             </section>
             
 
 
-                <footer class="footer">
-                    <h4><b>2021 Telecom SA</b></h4>
-                    <div>
-                        <p>Terminos y Condiciones</p>
-                        <p>Proteccion de datos personales</p>
-                    </div>
-                    <div class="footer__Contenedor">
+            <footer class="footer">
+                <a href="https://www.telecom.com.ar/" class="footer_titulo" ><b>2021 Telecom SA</b></a>
+                <div class="footer__texto">
+                    <a href="https://www.telecom.com.ar/pymes/legales/terminos-y-condiciones>" class="texto__terminos">Términos y Condiciones</p></a>
+                    <a href="https://www.telecom.com.ar/pymes/legales/proteccion-de-datos-personales" class="texto__datosp"> Protección de datos personales </a>
+                </div>
+                <div class="footer__Contenedor">
+                    <a href="https://www.facebook.com/">
                         <i class="fab fa-facebook-f footer__img" ></i>
-                        <i class="fab fa-instagram footer__img"></i>
-                        <i class="fab fa-youtube footer__img"></i>
-                        
-    
-                    </div>
-                </footer>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                    <i class="fab fa-instagram footer__img"></i>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <i  class="fab fa-youtube footer__img"></i>
+                    </a>
+                    
+
+                </div>
+            </footer>
 
 
 

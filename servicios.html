@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/20863efab9.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="imagenes/iconos/icons8-smarthome-64.png">
         <link rel="stylesheet" href="./style/main.css">
         
 
@@ -81,13 +82,13 @@
                     </div>    
                 </div>
 
-                <div class="ServSeguridad_Img_1">
+                <div class="ServSeguridad_Img_1" id="SMSeguridad">
                     <div class="servicios_cont"> 
                             <div class="servicios_cont_texto">
                                 <h2>SmartSeguridad</h2>
                                 <p>Automatización del hogar y habilitación de voz</p>
                             </div>
-                            <a href="#" class="serv_cont_btn">Contratar</a>
+                            <a href="servicios.html#Contratar" class="serv_cont_btn">Contratar</a>
                             
                     </div>
                 
@@ -95,6 +96,12 @@
 
                 <div class="main">                  
                     <h3 class="main__titulo">SmartSeguridad</h3>
+                    <div class="main__iconos">
+                        <img src="imagenes/iconos/ico_seg_cam.png" class="iconos__serv" alt="icono camara seguridad" loading="lazy">
+                        <img src="imagenes/iconos/ico_seg_alerta.png" class="iconos__serv" alt="icono alertas varias" loading="lazy">
+                        <img src="imagenes/iconos/ico_seg_cerradura.png" class="iconos__serv" alt="icono casa segura" loading="lazy">
+                        <img src="imagenes/iconos/ico_seg_puerta.png" class="iconos__serv" alt="icono puerta apertura automatica" loading="lazy">
+                    </div>
                     <div class="main__article">
                         <p class="main__texto">
                         
@@ -107,13 +114,13 @@
                 </div>
 
 
-                <div class="ServSeguridad_Img_2">
+                <div class="ServSeguridad_Img_2" id="SMMultimedia">
                     <div class="servicios_cont"> 
                             <div class="servicios_cont_texto">
                                 <h2>SmartMultimedia</h2>
                                 <p>Automatización del hogar y habilitación de voz</p>
                             </div>
-                            <a href="#" class="serv_cont_btn">Contratar</a>
+                            <a href="servicios.html#Contratar" class="serv_cont_btn">Contratar</a>
                             
                     </div>
                 
@@ -121,6 +128,12 @@
 
                 <div class="main">
                     <h3 class="main__titulo">SmartMultimedia</h3>
+                    <div class="main__iconos">
+                        <img src="imagenes/iconos/ico_mult_tv.png" class="iconos__serv" alt="icono TV" loading="lazy">
+                        <img src="imagenes/iconos/ico_mult_hothea.png" class="iconos__serv" alt="icono home theatre" loading="lazy">
+                        <img src="imagenes/iconos/ico_mult_wifi.png" class="iconos__serv" alt="icono router wifi" loading="lazy">
+                        <img src="imagenes/iconos/ico_mult_bkup.png" class="iconos__serv" alt="icono servicio nube" loading="lazy">
+                    </div>
                     <div class="main__article">
                         <p class="main__texto">
 
@@ -134,13 +147,13 @@
                 </div>
 
 
-                <div class="ServSeguridad_Img_3">
+                <div class="ServSeguridad_Img_3" id="SMMantenimiento">
                     <div class="servicios_cont"> 
                             <div class="servicios_cont_texto">
                                 <h2>SmartMantenimiento</h2>
                                 <p>Gestión de redes domésticas</p>
                             </div>
-                            <a href="#" class="serv_cont_btn">Contratar</a>
+                            <a href="servicios.html#Contratar" class="serv_cont_btn">Contratar</a>
                             
                     </div>
                 
@@ -149,6 +162,12 @@
 
                 <div class="main">
                     <h3 class="main__titulo">SmartMantenimiento</h3>
+                    <div class="main__iconos">
+                        <img src="imagenes/iconos/ico_mant_aire.png" class="iconos__serv" alt="icono aire acondicionado" loading="lazy">
+                        <img src="imagenes/iconos/ico_mant_energia.png" class="iconos__serv" alt="icono energia solar" loading="lazy">
+                        <img src="imagenes/iconos/ico_mant_luces.png" class="iconos__serv" alt="icono luces automaticas" loading="lazy">
+                        <img src="imagenes/iconos/ico_mant_temp.png" class="iconos__serv" alt="icono control temperatura" loading="lazy">
+                    </div>
                     <div class="main__article">
                         <p class="main__texto">
 
@@ -162,6 +181,40 @@
 
                         </p>
                     </div>    
+                </div>
+
+                <div class="main" id="Contratar">
+                    <h3 class="main__titulo" >Completá el formulario y contratalo</h3>
+                    
+                    <div class="Formulario__Servicios">
+    
+                        <form class="ContenedorFormulario__form" >
+                               
+                                <p class="block">
+                                    <input type="text" name="Nombre" class="estiloForma " placeholder="Nombre y Apellido" required>
+                                </p>
+    
+                                <p>
+                                    <input type="email" name="Email" class="estiloForma" placeholder="Direccion de Correo" required>
+                                </p>
+                            
+    
+                                <p>
+                                    <input type="number" name="Telefono" class="estiloForma" placeholder="Telefono" required>
+                                </p>
+                            
+    
+                            <p class= "block">
+                                <button class="buttonForm" type="submit">
+                                    QUIERO QUE ME LLAMEN
+                                </button>
+    
+                            </p>
+            
+            
+            
+                        </form>
+                    </div>
                 </div>
 
                 <div class="main">
@@ -183,15 +236,21 @@
 
 
         <footer class="footer">
-            <p><b>2021 Telecom SA</b></p>
-            <div>
-                <p>Terminos y Condiciones</p>
-                <p>Proteccion de datos personales</p>
+            <a href="https://www.telecom.com.ar/" class="footer_titulo" ><b>2021 Telecom SA</b></a>
+            <div class="footer__texto">
+                <a href="https://www.telecom.com.ar/pymes/legales/terminos-y-condiciones>" class="texto__terminos">Términos y Condiciones</p></a>
+                <a href="https://www.telecom.com.ar/pymes/legales/proteccion-de-datos-personales" class="texto__datosp"> Protección de datos personales </a>
             </div>
             <div class="footer__Contenedor">
-                <i class="fab fa-facebook-f footer__img" ></i>
+                <a href="https://www.facebook.com/">
+                    <i class="fab fa-facebook-f footer__img" ></i>
+                </a>
+                <a href="https://www.instagram.com/">
                 <i class="fab fa-instagram footer__img"></i>
-                <i class="fab fa-youtube footer__img"></i>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <i  class="fab fa-youtube footer__img"></i>
+                </a>
                 
 
             </div>

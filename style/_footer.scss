@@ -3,7 +3,6 @@
     color:white;
     box-shadow:0 8px 32px 0 rgba(124, 125, 131, 0.37);
     border-top:2px solid rgba(255, 255, 255, 0.15);
-    
     padding: 2rem 0;
     font-size: $fuentestexto;
     text-align: center;
@@ -12,6 +11,37 @@
     justify-content:space-around;
     align-items:center; 
     flex-wrap:wrap;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        color: #333;
+        background-color: white;
+        border-radius: .5rem;
+    }
+
+    .footer_titulo{
+        padding: 0.5rem;
+    }
+
+    .footer__texto {
+
+        display: flex;
+        flex-direction: column;
+
+        .texto__terminos{
+            padding: 0.5rem;
+        }
+
+        .texto__datosp{
+            padding: 0.5rem;
+        }
+
+        }
+
 
 
     .footer__Contenedor{
@@ -28,6 +58,13 @@
 
         }
 
+        .fab:hover {
+            color: #333;
+            background-color: white;
+            border-radius: 1rem;
+            
+        }
+
     
     }
 
@@ -35,12 +72,24 @@
 
 @media (max-width:576px){
 
-    .footer h4{
-        margin: .5rem;
-    }
+    .footer{
 
-    div p{
-        margin: .5rem;
+        flex-direction: column;
+        
+
+        .footer_titulo{
+            margin:0;
+        }
+
+        a{
+            margin: .5rem;
+        }
+
+        .footer__texto {
+
+            display: flex;
+            flex-direction: row;
+        }
     }
 
 }
