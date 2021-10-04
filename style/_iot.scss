@@ -1,43 +1,255 @@
 
 .main_iot{
        
-    background-color: $colorPrimario;
+    background-color: white;
     display: flex;
-    margin:5rem auto 5rem auto;
     align-items: center;
-    padding: 0 5rem 0 5rem;
     border:none;
     box-shadow: 2px 2px 6px 0px rgba(196, 195, 195, 0.164);
-    text-align: left;
-    letter-spacing: 0.1rem;
+    text-align: center;
     flex-direction: column;
 
 
 
     .iot__titulo {
-        color: white;
+        color: $colorPrimario;
         font-size: $fuentesubtitulo;
         letter-spacing: 0.02em;
         text-align: center;
-        margin: 2rem auto 2rem auto;
+        padding: 2rem auto 2rem auto;
     }
 
     .iot__article{
 
-        background-color: $colorPrimario;
+        background-color: white;
         text-align: center;
+        margin:3rem auto 3rem auto;
 
 
         .iot__texto{
-            color: white;
-            font-size:$fuentestexto;
-            line-height: 1.5;
+            color: $colorPrimario;
+            font-size: clamp(1.8rem, 1.2500rem + 2.0833vw, 2rem);
+            letter-spacing: 0.02em;
+            text-align: center;
+            padding: 0 2rem 0 2rem;
         }
 
     }
+
+
+    .IOT_Blogs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        
+
+        .Blog{
+
+            margin-bottom: 2rem;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            width: 100%;
+
+
+
+            .blog__img{
+
+                
+                border-radius: 0.3rem;
+                box-shadow: 2px 2px 6px 0px rgba(105, 105, 105, 0.7);
+                margin: 2rem;
+                transition: 0.5s ease;
+                
+            }
+
+            .blog__img:hover {filter: opacity(0.7);
+                transform:scale(1.02);
+                transition: 0.5s;
+                margin: 3rem;
+            }
+
+
+        }
+
+        .BlogReverse{
+
+            flex-direction: row-reverse;
+
+        }
+
+        .blog__texto{
+
+            max-width: 600px;
+            padding: 2rem;
+
+            .texto__titulo{
+
+                font-size: clamp(1.8rem, 1.2500rem + 2.0833vw, 2rem);
+                margin-bottom: 1rem;
+
+            }
+
+            .texto__cont{
+
+                font-size:$fuentestexto;
+
+                .texto__link{
+                    text-decoration: none;
+                    color: #618DE7;
+
+                }
+
+                .texto__link:hover{
+                    background-color:#618DE7;
+                    color: rgb(255, 255, 255);
+                    transition: 0.5s;
+                    border-radius: 3px;
+                    
+                    
+                }
+
+
+            }
+        }
+
+    }
+
+    @media (max-width:700px){
+    
+        .IOT_Blogs {
+
+            .Blog{
+
+                flex-direction: column;
+
+                .blog__img{
+                    margin: 1rem 0 0 0;    
+                }
+
+            }
+            
+        }
+
+    }
+
+    .newsletter{
+
+        background-color: $colorPrimario;
+        color: white;
+        width: 100%;
+        margin: 2rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .newsletter__texto{
+
+            padding: 1rem;
+
+            .newsletter__titulo{
+                font-size: $fuentestexto;
+                font-weight: bold;
+                padding: 1rem;
+                letter-spacing: 0.2em
+            }
+
+            .newsletter__cont{
+                font-size: $fuentestexto;
+            }
+        }
+
+
+
+        .newsletter__form{
+            width: 100%;
+            position: relative;
+
+
+            .form__input{
+                width: 100%;
+                padding: 1rem 5rem 1rem 6rem;
+                border-radius: 0.5rem;
+                border: none;
+                font-weight: bold;
+            }
+
+            .fas{
+                color: #618DE7;
+                position: absolute;
+                top: 50%;
+                transform:translateY(-50%);
+                left:2rem;
+                font-size: 2.5rem;
+            }
+
+            .form__boton{
+
+                background-color: white;
+                color: #618DE7;
+                position: absolute;
+                top:50%;
+                right: 3rem;
+                transform: translateY(-50%);
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                letter-spacing: 0.2em;
+                cursor: pointer;
+
+
+            }
+
+            .form__boton:hover{
+                background-color: #618DE7;
+                color: white;
+                transition: 0.5s;
+            }
+
+        }
+
+
+
+    }
+
+    @media (max-width:700px){
+
+        .newsletter{
+
+            flex-direction: column;
+
+            .newsletter__form{
+
+                display: flex;
+                flex-direction: column;
+
+                .fas{
+                    
+                    top: 23.5%;
+
+                }
+
+                .form__boton{
+
+                    position:static;
+                    margin-bottom: 1rem;
+                    transform: translateY(50%);
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+
+
+
 }
-
-
-
-
-
