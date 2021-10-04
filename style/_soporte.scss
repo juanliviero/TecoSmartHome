@@ -1,4 +1,6 @@
 
+    // ------------ CSS SOPORTE ----------------- //
+
 .main_soporte{
        
     background-color: $colorPrimario;
@@ -24,10 +26,10 @@
         margin:2rem ;
     }
 
+    // ------------ CSS SOPORTE - LOGIN USUARIO ----------------- //
 
     .soporte_login{
         background-color: rgba(255, 255, 255, 0.75);
-        border-radius: 0.5rem;
         padding: 3rem;
         width: auto;
         letter-spacing: 0.1rem;
@@ -64,6 +66,8 @@
 
 
         }
+
+    // ------------ CSS SOPORTE - LOGIN USUARIO - FORMULARIO ----------------- //
 
         .ContFormulario__Login{
 
@@ -113,6 +117,7 @@
                     width: 100%;
                     font-size: $fuentestexto;
                     font-weight:bolder;
+                    cursor: pointer;
 
 
                 }
@@ -121,9 +126,10 @@
                 .login__btn:focus{
 
                     background:#618DE7;
+                    color: white;
                     transition:background-color 0.3s ease-out;
 
-            }
+                }
 
             }
 
@@ -145,6 +151,8 @@
 
 
     }
+
+    // ------------ CSS SOPORTE - TIPOS ATENCION ----------------- //
 
     .main__atencion{
         width: 80%;
@@ -246,6 +254,9 @@
     }
 
 
+        // ------------ CSS SOPORTE - CONSULTAS FRECUENTES ----------------- //
+
+
     .soporte__articulos{
         width: 100%;
         display: flex;
@@ -304,6 +315,8 @@
 
 
 }
+
+    // ------------ CSS SOPORTE - MEDIA QUERY ----------------- //
 
 
 @media (max-width:768px){

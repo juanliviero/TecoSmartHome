@@ -1,4 +1,7 @@
 
+    // ------------ CSS HEADER ----------------- //
+
+
 .header__navbar{
     background: $colorPrimario;
     color:#f2f2f2;
@@ -27,15 +30,13 @@
     .menuhamburguesa{
     
         background-color: $colorPrimario;
-        border-bottom: 2px solid $colorPrimario;
+        border-bottom: 1px solid $colorPrimario;
         color:white;
-        padding: 1rem;
+        padding: 0.5rem;
         display:none;
-    
     
     }
     
-
 
     .navbar__lista{
 
@@ -68,13 +69,11 @@
 
 
 
-/* ----- Navegacion Media Query ----- */
+    // ------------ MEDIA QUERY ----------------- //
 
  @media screen and (max-width:576px)
 {
 
-
-    
 
     .header__navbar{
 
@@ -86,6 +85,7 @@
         height: auto;
         
         .header__logo{
+
             display: flex;
             flex-direction: row;
             width: 90%;
@@ -97,12 +97,21 @@
 
                  display:flex;
 
+                 .fas{
+                     cursor: pointer;
+                 }
+
+
+            }
+            .menuhamburguesa:hover{
+                background-color: white;
+                border-radius: 0.2rem;
+                color: #618DE7;
+
             }
 
 
         }
-
-
 
         .navbar__lista{
 
@@ -146,6 +155,7 @@
 
 }
 
+    // ------------ CSS NAVBAR  HABILITACION MENU HAMBURGUESA ----------------- //
 
 #toggle:checked + .navbar__lista
  {

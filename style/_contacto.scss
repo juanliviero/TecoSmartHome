@@ -1,7 +1,8 @@
-.ContenedorFormulario{
 
-    width: 50%;
-    margin: 5rem auto 10rem auto;
+    // ------------ CSS CONTACTO ----------------- //
+
+.ContenedorFormulario{
+    width: 600px;
     border-radius: 1rem;
     padding: 2rem;
     background: rgba(51, 51, 51, 0.750);
@@ -10,27 +11,24 @@
     border-left:2px solid rgba(255, 255, 255, 0.15);
 
 
-    .ContenedorFormulrio h1{
+    .ContenedorFormulario__Titulo{
 
-        margin-bottom: 2rem;
-        background: rgba(255, 255, 255, 0.6);
+        margin-bottom: 5rem;
+        padding:0.2rem 1rem 0.2rem 1rem;
+        background:#618DE7;
+        color: white;
         border-radius: 0.5rem;
-        color: #333;
-        padding-left: 3rem;
         font-size: $fuentesubtitulo;
+        text-align: center;
 
     }   
 
     .ContenedorFormulario__form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr 1fr)); 
     gap: 2rem;
     justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    font-size: $fuentestexto;
     
 
         .estiloForma{
@@ -45,24 +43,77 @@
 
         input{
 
-        height: 4rem;
+        height: 3rem;
             
         } 
 
-        // .textarea{
-        //     grid-column: 1/3;
-        // }
+        .textarea{
+            grid-column: 1 / 3;
+            width: 80%;
+            min-height: 50px;
+            max-height: 100px;
+            min-width: 50%;
+            max-width: 100%;
+            font-size: $fuentestexto;
+        }
 
         .buttonForm{
 
-            padding: 1rem;
-            background:#80E4DC;
-            color:#333;
+            margin-top: 5rem;
+            grid-column: 1 / 3;
+            width: 100%;
+            background:white;
+            color:#618DE7;
             border: none;
-            border-radius: 1rem;
-            width: 20rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-size: $fuentestexto;
+            cursor: pointer;
+            letter-spacing: 0.2em;
+            
+        }
+
+        .buttonForm:hover{
+            background-color: #618DE7;
+            color: white;
+            transition: 0.5s;
+        }
+    }
+
+    // ------------ MEDIA QUERIES ----------------- //
+
+    @media (max-width:620px){
+
+            width: auto;
+            
+
+        .ContenedorFormulario__form{
+
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .textarea{
+                grid-column: 1 / 2;
+                width: 80%;
+                min-height: 50px;
+                max-height: 100px;
+                min-width: 50%;
+                max-width: 100%;
+            }
+    
+            .buttonForm{
+    
+                grid-column: 1 / 2;
+                width: 100%;
+                border: none;
+                border-radius: 0.5rem;
+                text-align: center;
+                font-size: $fuentestexto;
+    
+            }
 
         }
+
     }
 
 }

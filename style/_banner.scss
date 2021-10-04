@@ -1,4 +1,4 @@
-/* BANNER INDEX */
+    // ------------ CSS BANNER - INDEX ----------------- //
 
 .banner{
     background-image:url("../imagenes/family_iot.jpg");
@@ -55,7 +55,7 @@
 }
 
 
-/* ----- BANNER Media Query ----- */
+    // ------------ CSS BANNER - INDEX MEDIA QUERY ----------------- //
 
 @media (max-width:768px)
 {
@@ -95,9 +95,9 @@
 
 
 
-  /* ----- BANNER RESTO DE PAGINAS ----- */
+    // ------------ CSS BANNER - SERVICIOS ----------------- //
 
- .bannerResto{
+ .bannerServ{
     background-image:url("../imagenes/family_iot.jpg");
     padding-top:50px;
     width: 100%;
@@ -106,7 +106,7 @@
     background-position:center;
     background-attachment: fixed;
     
-    .bannerResto__cont{
+    .bannerServ__cont{
         margin:0;
         padding:0;
         width: 100%;
@@ -119,10 +119,10 @@
         align-items:center;
         font-family: 'Lato', sans-serif;
 
-        .bannerResto__tarjeta{
+        .bannerServ__tarjeta{
             
 
-            .bannerResto__titulo{
+            .bannerServ__titulo{
                 margin:0;
                 padding:0;
                 padding-bottom: 1rem;
@@ -138,7 +138,7 @@
 }
 
 
-/* ----- BANNER IOT ----- */
+    // ------------ CSS BANNER - IOT ----------------- //
 
 .bannerIOT{
     background-image:url("../imagenes/IOT.jpg");
@@ -180,19 +180,7 @@
     }   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----- PAGINA CONTACTO ----- */
+    // ------------ CSS BANNER - CONTACTO ----------------- //
 
 
 
@@ -218,32 +206,13 @@
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        font-family: 'Lato', sans-serif;
     
 
-        .bannerContacto__cont h1{
-            margin:0;
-            padding:0;
-            padding-bottom: 5rem;
-            font-size:5rem;
-            text-align:center;
-
-        }
-
-        .bannerContacto__cont p{
-            margin:0;
-            padding:0;
-            padding-bottom: 5rem;
-            font-size:2rem;
-            text-align:center;
-
-        }
     }
 }
 
 
-
-/* ----- PAGINA SOPORTE ----- */
+    // ------------ CSS BANNER - SOPORTE ----------------- //
 
 
 
@@ -271,9 +240,6 @@
 
         .bannerSoporte__tarjeta{
             
-        
-    
-
             .bannerSoporte__titulo{
                 margin:0;
                 padding:0;

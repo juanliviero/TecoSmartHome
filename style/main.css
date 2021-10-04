@@ -99,9 +99,9 @@ body {
 }
 .header__navbar .menuhamburguesa {
   background-color: #333;
-  border-bottom: 2px solid #333;
+  border-bottom: 1px solid #333;
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
   display: none;
 }
 .header__navbar .navbar__lista {
@@ -124,7 +124,6 @@ body {
   border-bottom: 0.2rem solid;
 }
 
-/* ----- Navegacion Media Query ----- */
 @media screen and (max-width: 576px) {
   .header__navbar {
     flex-direction: column;
@@ -144,6 +143,14 @@ body {
   }
   .header__navbar .header__logo .menuhamburguesa {
     display: flex;
+  }
+  .header__navbar .header__logo .menuhamburguesa .fas {
+    cursor: pointer;
+  }
+  .header__navbar .header__logo .menuhamburguesa:hover {
+    background-color: white;
+    border-radius: 0.2rem;
+    color: #618DE7;
   }
   .header__navbar .navbar__lista {
     text-align: center;
@@ -166,7 +173,6 @@ body {
   display: block;
 }
 
-/* BANNER INDEX */
 .banner {
   background-image: url("../imagenes/family_iot.jpg");
   padding-top: 50px;
@@ -208,7 +214,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ----- BANNER Media Query ----- */
 @media (max-width: 768px) {
   .banner {
     background-image: url("../imagenes/family_iot.jpg");
@@ -231,8 +236,7 @@ body {
     background-attachment: fixed;
   }
 }
-/* ----- BANNER RESTO DE PAGINAS ----- */
-.bannerResto {
+.bannerServ {
   background-image: url("../imagenes/family_iot.jpg");
   padding-top: 50px;
   width: 100%;
@@ -241,7 +245,7 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-.bannerResto .bannerResto__cont {
+.bannerServ .bannerServ__cont {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -254,7 +258,7 @@ body {
   align-items: center;
   font-family: "Lato", sans-serif;
 }
-.bannerResto .bannerResto__cont .bannerResto__tarjeta .bannerResto__titulo {
+.bannerServ .bannerServ__cont .bannerServ__tarjeta .bannerServ__titulo {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
@@ -263,7 +267,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ----- BANNER IOT ----- */
 .bannerIOT {
   background-image: url("../imagenes/IOT.jpg");
   padding-top: 50px;
@@ -295,7 +298,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ----- PAGINA CONTACTO ----- */
 .bannerContacto {
   background-image: url("../imagenes/contact-us-4193523_1920.jpg");
   padding-top: 50px;
@@ -316,24 +318,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Lato", sans-serif;
-}
-.bannerContacto .bannerContacto__cont .bannerContacto__cont h1 {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 5rem;
-  font-size: 5rem;
-  text-align: center;
-}
-.bannerContacto .bannerContacto__cont .bannerContacto__cont p {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 5rem;
-  font-size: 2rem;
-  text-align: center;
 }
 
-/* ----- PAGINA SOPORTE ----- */
 .bannerSoporte {
   background-image: url("../imagenes/support_welcome_700x500.png");
   padding-top: 50px;
@@ -515,6 +501,11 @@ body {
   color: white;
   text-decoration: none;
 }
+.mainServicios .ServSeguridad_Img_1 .servicios_cont .serv_cont_btn:hover {
+  background: #618DE7;
+  color: white;
+  transition: background-color 0.3s ease-out;
+}
 .mainServicios .ServSeguridad_Img_2 {
   height: 45rem;
   width: 100%;
@@ -546,6 +537,11 @@ body {
   color: white;
   text-decoration: none;
 }
+.mainServicios .ServSeguridad_Img_2 .servicios_cont .serv_cont_btn:hover {
+  background: #618DE7;
+  color: white;
+  transition: background-color 0.3s ease-out;
+}
 .mainServicios .ServSeguridad_Img_3 {
   height: 45rem;
   width: 100%;
@@ -576,6 +572,11 @@ body {
   background-color: #333;
   color: white;
   text-decoration: none;
+}
+.mainServicios .ServSeguridad_Img_3 .servicios_cont .serv_cont_btn:hover {
+  background: #618DE7;
+  color: white;
+  transition: background-color 0.3s ease-out;
 }
 .mainServicios .main .main__iconos {
   display: flex;
@@ -707,16 +708,18 @@ body {
   padding: 1rem;
   outline: none;
   background: white;
-  color: #333;
+  color: #618DE7;
   border: none;
   border-radius: 0.2rem;
   width: 100%;
   font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   font-weight: bolder;
+  cursor: pointer;
 }
 .Formulario__Servicios .ContenedorFormulario__form .buttonForm:hover,
 .Formulario__Servicios .ContenedorFormulario__form .buttonForm:focus {
   background: #618DE7;
+  color: white;
   transition: background-color 0.3s ease-out;
 }
 
@@ -742,7 +745,7 @@ body {
   .main .Formulario__Servicios .ContenedorFormulario__form .buttonForm:hover,
 .main .Formulario__Servicios .ContenedorFormulario__form .buttonForm:focus {
     background: #618DE7;
-    color: #333;
+    color: white;
     transition: background-color 0.3s ease-out;
   }
   .main .Formulario__Servicios .ContenedorFormulario__form .block {
@@ -771,8 +774,8 @@ body {
   margin: 3rem auto 3rem auto;
 }
 .main_iot .iot__article .iot__texto {
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   color: #333;
-  font-size: clamp(1.8rem, 1.2500rem + 2.0833vw, 2rem);
   letter-spacing: 0.02em;
   text-align: center;
   padding: 0 2rem 0 2rem;
@@ -881,7 +884,8 @@ body {
 }
 .main_iot .newsletter .newsletter__form .form__boton {
   background-color: white;
-  color: #618DE7;
+  background-color: #333;
+  color: white;
   position: absolute;
   top: 50%;
   right: 3rem;
@@ -908,6 +912,8 @@ body {
     top: 23.5%;
   }
   .main_iot .newsletter .newsletter__form .form__boton {
+    background-color: white;
+    color: #333;
     position: static;
     margin-bottom: 1rem;
     transform: translateY(50%);
@@ -915,8 +921,7 @@ body {
 }
 
 .ContenedorFormulario {
-  width: 50%;
-  margin: 5rem auto 10rem auto;
+  width: 600px;
   border-radius: 1rem;
   padding: 2rem;
   background: rgba(51, 51, 51, 0.75);
@@ -924,24 +929,21 @@ body {
   border-top: 2px solid rgba(255, 255, 255, 0.15);
   border-left: 2px solid rgba(255, 255, 255, 0.15);
 }
-.ContenedorFormulario .ContenedorFormulrio h1 {
-  margin-bottom: 2rem;
-  background: rgba(255, 255, 255, 0.6);
+.ContenedorFormulario .ContenedorFormulario__Titulo {
+  margin-bottom: 5rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  background: #618DE7;
+  color: white;
   border-radius: 0.5rem;
-  color: #333;
-  padding-left: 3rem;
   font-size: clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);
+  text-align: center;
 }
 .ContenedorFormulario .ContenedorFormulario__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr 1fr));
   gap: 2rem;
   justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 }
 .ContenedorFormulario .ContenedorFormulario__form .estiloForma {
   border: none;
@@ -952,15 +954,59 @@ body {
   color: #fff;
 }
 .ContenedorFormulario .ContenedorFormulario__form input {
-  height: 4rem;
+  height: 3rem;
+}
+.ContenedorFormulario .ContenedorFormulario__form .textarea {
+  grid-column: 1/3;
+  width: 80%;
+  min-height: 50px;
+  max-height: 100px;
+  min-width: 50%;
+  max-width: 100%;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
 }
 .ContenedorFormulario .ContenedorFormulario__form .buttonForm {
-  padding: 1rem;
-  background: #80E4DC;
-  color: #333;
+  margin-top: 5rem;
+  grid-column: 1/3;
+  width: 100%;
+  background: white;
+  color: #618DE7;
   border: none;
-  border-radius: 1rem;
-  width: 20rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
+  cursor: pointer;
+  letter-spacing: 0.2em;
+}
+.ContenedorFormulario .ContenedorFormulario__form .buttonForm:hover {
+  background-color: #618DE7;
+  color: white;
+  transition: 0.5s;
+}
+@media (max-width: 620px) {
+  .ContenedorFormulario {
+    width: auto;
+  }
+  .ContenedorFormulario .ContenedorFormulario__form {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .ContenedorFormulario .ContenedorFormulario__form .textarea {
+    grid-column: 1/2;
+    width: 80%;
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 50%;
+    max-width: 100%;
+  }
+  .ContenedorFormulario .ContenedorFormulario__form .buttonForm {
+    grid-column: 1/2;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
+  }
 }
 
 .main_soporte {
@@ -985,7 +1031,6 @@ body {
 }
 .main_soporte .soporte_login {
   background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 0.5rem;
   padding: 3rem;
   width: auto;
   letter-spacing: 0.1rem;
@@ -1052,10 +1097,12 @@ body {
   width: 100%;
   font-size: clamp(1.4rem, 1.1000rem + 0.8333vw, 1.6rem);
   font-weight: bolder;
+  cursor: pointer;
 }
 .main_soporte .soporte_login .ContFormulario__Login .Login__form .login__btn:hover,
 .main_soporte .soporte_login .ContFormulario__Login .Login__form .login__btn:focus {
   background: #618DE7;
+  color: white;
   transition: background-color 0.3s ease-out;
 }
 .main_soporte .soporte_login .login_cont_btn {
@@ -1244,13 +1291,24 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
-  font-size: 3rem;
+  font-size: clamp(3rem, 1.0500rem + 5.4167vw, 5.4rem);
   text-align: start;
 }
 .banner404 .banner404__cont .banner404__tarjeta .banner404__subTitulo {
   margin: 0;
   padding: 0;
   padding-bottom: 3rem;
-  font-size: 3rem;
+  font-size: clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);
   text-align: center;
+}
+@media (max-width: 576px) {
+  .banner404 .banner404__cont .banner404__tarjeta {
+    border-radius: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  .banner404 .banner404__cont .banner404__tarjeta .banner404__titulo {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

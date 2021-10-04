@@ -9,7 +9,7 @@
 
 /* #333 - #004D5E - #52843E - #618DE7 - #80E4DC - #4A4AED - #f2f2f2 */
 
-//Variables //
+// Variables //
 
 
 
@@ -34,9 +34,13 @@ body{
 }
 
 
+    // ------------ CSS GENERAL - VARIABLE COLORES ----------------- //
+
 $colorPrimario : #333;
 $colorSecundario: #004D5E;
 $colorTerciario: #52843E;
+
+    // ------------ CSS GENERAL - VARIABLE FUENTES ----------------- //
 
 $fuentestitulo:clamp(3rem, 1.0500rem + 5.4167vw, 5.4rem);
 $fuentesubtitulo:clamp(2rem, 1.2500rem + 2.0833vw, 2.7rem);

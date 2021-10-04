@@ -1,5 +1,5 @@
 
-// SERVICIOS PAGINA INICIO //
+    // ------------ CSS SERVICIOS INICIO.HTML ----------------- //
 
 .ContServ
 {
@@ -88,7 +88,7 @@
 }
 
 
-// SERVICIOS - PAGINA SERVICIOS //
+    // ------------ CSS SERVICIOS SERVICIOS.HTML ----------------- //
 
     .mainServicios {
 
@@ -134,9 +134,15 @@
                         text-decoration: none;                 
     
                     }
-    
+
+                    .serv_cont_btn:hover{
+
+                            background:#618DE7;
+                            color: white;
+                            transition:background-color 0.3s ease-out;
         
-        
+                    }
+
                     
                 }
 
@@ -180,9 +186,14 @@
 
                     }
 
-        
-        
-                    
+                    .serv_cont_btn:hover{
+
+                        background:#618DE7;
+                        color: white;
+                        transition:background-color 0.3s ease-out;
+    
+                    }
+           
                 }
 
             }
@@ -224,6 +235,14 @@
                     text-decoration: none;                 
 
                 }
+
+                .serv_cont_btn:hover{
+
+                    background:#618DE7;
+                    color: white;
+                    transition:background-color 0.3s ease-out;
+
+                }
                 
             }
         }
@@ -243,7 +262,7 @@
         }
     }
 
-
+    // ------------  MEDIA QUERY ----------------- //
 
      @media (max-width:768px){
 
@@ -390,8 +409,7 @@
 
     }
 
-
-    // FORMULARIO DE CONTACTO - SERVICIOS //
+    // ------------ CSS SERVICIOS FORMULARIO DE CONTACTO ----------------- //
 
 
     .Formulario__Servicios{
@@ -433,12 +451,13 @@
                 padding: 1rem;
                 outline: none;
                 background:white;
-                color:#333;
+                color:#618DE7;
                 border: none;
                 border-radius: 0.2rem;
                 width: 100%;
                 font-size: $fuentestexto;
                 font-weight:bolder;
+                cursor: pointer;
                 
             }
 
@@ -446,6 +465,7 @@
             .buttonForm:focus{
 
                     background:#618DE7;
+                    color: white;
                     transition:background-color 0.3s ease-out;
 
             }
@@ -455,6 +475,8 @@
         
 
     }
+
+    // ------------ CSS SERVICIOS FORMULARIO DE CONTACTO - MEDIA QUERY ----------------- //
 
     @media (min-width:420px){
 
@@ -482,7 +504,7 @@
 
                     .buttonForm{
                 
-                        background:#333;
+                        background:$colorPrimario;
                         color:white;
 
                         
@@ -492,7 +514,7 @@
                     .buttonForm:focus{
 
                     background: #618DE7;
-                    color:#333;
+                    color:white;
                     transition:background-color 0.3s ease-out;
 
             }

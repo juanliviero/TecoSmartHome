@@ -1,3 +1,5 @@
+// ------------ CSS IOT ----------------- //
+
 
 .main_iot{
        
@@ -27,8 +29,8 @@
 
 
         .iot__texto{
+            font-size: $fuentestexto;
             color: $colorPrimario;
-            font-size: clamp(1.8rem, 1.2500rem + 2.0833vw, 2rem);
             letter-spacing: 0.02em;
             text-align: center;
             padding: 0 2rem 0 2rem;
@@ -36,6 +38,7 @@
 
     }
 
+    // ------------ CSS IOT BLOGS ----------------- //
 
     .IOT_Blogs{
         display: flex;
@@ -119,6 +122,8 @@
 
     }
 
+    // ------------ CSS IOT BLOGS - MEDIA QUERY ----------------- //
+
     @media (max-width:700px){
     
         .IOT_Blogs {
@@ -136,6 +141,8 @@
         }
 
     }
+
+    // ------------ CSS IOT NEWSLETTER ----------------- //
 
     .newsletter{
 
@@ -192,7 +199,8 @@
             .form__boton{
 
                 background-color: white;
-                color: #618DE7;
+                background-color: #333;
+                color: white;
                 position: absolute;
                 top:50%;
                 right: 3rem;
@@ -213,9 +221,9 @@
 
         }
 
-
-
     }
+
+    // ------------ CSS IOT NEWSLETTER - MEDIA QUERY ----------------- //
 
     @media (max-width:700px){
 
@@ -236,6 +244,8 @@
 
                 .form__boton{
 
+                    background-color: white;
+                    color: $colorPrimario;
                     position:static;
                     margin-bottom: 1rem;
                     transform: translateY(50%);
@@ -248,8 +258,5 @@
         }
 
     }
-
-
-
 
 }
